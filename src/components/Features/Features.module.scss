@@ -1,0 +1,94 @@
+@use "../../styles/media" as *;
+@use "../../styles/fonts" as *;
+
+.features {
+  margin: 0 auto;
+  max-width: 1440px;
+  height: 313px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 23.67px;
+
+  @media screen and (min-width: $desktop) {
+    margin: 0 auto;
+  }
+}
+
+h1 {
+  color: #252b42;
+  font-weight: var(--font-weight-700);
+  font-size: 39.45px;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.travelpicture {
+  max-width: 101.64px;
+}
+
+h2 {
+  color: #f85e9f;
+  text-transform: uppercase;
+  text-align: left;
+  font-weight: var(--font-weight-600);
+  font-size: 17.75px;
+}
+
+.airplanepicture {
+  max-width: 83.96px;
+}
+
+p {
+  color: #191825bf;
+  text-align: left;
+  font-weight: var(--font-weight-400);
+  font-size: 16px;
+}
+
+.cardpicture {
+  max-width: 111.39px;
+}
+
+.column {
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &:nth-child(2) {
+    padding-right: 34.82px;
+  }
+
+  &:nth-last-child(-n + 2) {
+    padding-right: 38.51px;
+  }
+}
+
+.column:first-child {
+  grid-column: 1 / span 1;
+}
+
+.column img {
+  width: 100%;
+}
+
+@media screen and (max-width: $tablet) {
+  .features {
+    grid-template-columns: repeat(2, 1fr);
+    height: auto;
+    padding: 0 20px;
+  }
+
+  .column {
+    padding: 30px;
+  }
+
+  .column:nth-child(2) {
+    padding-right: 20px;
+  }
+
+  .column:nth-last-child(-n + 2) {
+    padding-right: 20px;
+  }
+}
