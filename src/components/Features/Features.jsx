@@ -8,7 +8,7 @@ const Features = () => {
   return (
     <section className={styles.features}>
       <div className={styles.column}>
-        <h2>What we serve</h2>
+        <h2 className={styles.headingTwo}>What we serve</h2>
         <h1>Top values for you</h1>
         <p>Embrace life's vastness, venture forth</p>
       </div>
