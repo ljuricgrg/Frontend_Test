@@ -1,0 +1,109 @@
+@use "../../styles/media" as *;
+@use "../../styles/fonts" as *;
+
+.newsletter {
+  height: 467px;
+  width: 100%;
+  display: grid;
+  padding: 20px;
+  max-width: 1440px;
+  position: relative;
+
+  @media screen and (min-width: $tablet) {
+    padding: 40px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    margin: 0 auto;
+  }
+}
+
+.newsletterContainer {
+  background: #facd49;
+  padding: 20px;
+  margin: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+
+  @media screen and (min-width: $tablet) {
+    padding: 30px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding: 40px;
+  }
+}
+
+.leftContainer {
+  align-self: flex-start;
+  position: absolute;
+  top: 0px;
+  left: 10px;
+}
+
+.rightContainer {
+  align-self: flex-start;
+  position: absolute;
+  top: 0px;
+  right: 20px;
+}
+
+.innerContainer {
+  flex-grow: 1;
+  margin: 0 20px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.heading {
+  margin-bottom: 10px;
+  font-weight: var(--font-weight-600);
+  font-size: 39.45px;
+}
+
+.paragraph {
+  margin-bottom: 20px;
+  font-weight: var(--font-weight-400);
+  font-size: 16px;
+  text-align: center;
+}
+
+input[type="email"] {
+  width: 60%;
+  padding: 14px;
+  padding-right: 10%;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.inputContainer {
+  position: relative;
+}
+
+.sendIcon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 15%;
+  top: 72%;
+}
+@media screen and (min-width: 768px) {
+  .innerContainer {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
+.vectorAirplane {
+  position: absolute;
+  top: 65%;
+}
+
+.vectorLocation {
+  position: absolute;
+  top: 75%;
+  right: 80%;
+}
