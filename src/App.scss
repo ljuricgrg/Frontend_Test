@@ -1,11 +1,13 @@
 @use "./styles/fonts";
 
-//import reset css
 @import "reset-css";
 
 .App {
   text-align: center;
   font-family: var(--font-family);
+  display: grid;
+  width: 100%;
+  max-width: 1440px;
 }
 
 .App-logo {
